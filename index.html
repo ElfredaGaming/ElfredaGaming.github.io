@@ -11728,4 +11728,16 @@ $(document).ready(function() {
         $('.animated-icon3').toggleClass('open');
     });
 });
+
+$(document).ready(function () {
+  $('[data-toggle="offcanvas"]').click(function () {
+    var act = $('.animated-icon3').hasClass("open");
+
+    if(act){
+       $('.btn').html("HIDE");
+    }else{
+       $('.btn').html("SHOW");
+    }
+  });
+});
 </script>
